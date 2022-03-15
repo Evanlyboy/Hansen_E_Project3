@@ -1,0 +1,61 @@
+.hidden {
+display: none;
+}
+
+/* Before 641px, display this */
+@media screen and (max-width: 641px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .one {
+        background-color: blue;
+    }
+    
+    .two {
+        background-color: purple;
+    }
+
+    .three {
+        display: none;
+    }
+
+    .four {
+        display: none;
+    }
+    
+    .column {
+        padding: 3em;
+    }
+}
+
+/* After 641px, display this */
+@media screen and (min-width: 642px) {
+    .body {
+        display:flex;
+        flex-direction: row;
+        max-width: 1140px;
+    }
+
+    .one {
+        background-color: blue;
+    }
+    
+    .two {
+        background-color: purple;
+    }
+
+    .three {
+        background-color: grey;
+    }
+
+    .four {
+        background-color: brown;
+    }
+    
+    .column {
+        padding: 3em;
+    }
+}
